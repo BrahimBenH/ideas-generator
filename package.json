@@ -22,3 +22,6 @@
     "vite": "^6.0.5"
   }
 }
+"scripts": {
+  "build": "vite build"
+}
