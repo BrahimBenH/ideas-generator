@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = "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"; // Replace with your OpenRouter API key
+const API_KEY = import.meta.env.VITE_API_KEY; // Replace with your OpenRouter API key
 const BASE_URL = "https://openrouter.ai/api/v1/chat/completions";
 
 export const getBrainstormIdea = async (prompt) => {
