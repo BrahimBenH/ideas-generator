@@ -1,0 +1,66 @@
+/* Canvas Page */
+.canvas-container {
+    text-align: center;
+    background: #2c3e50; /* Dark bluish background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    max-width: 600px;
+    margin: 30px auto; /* Centering and spacing */
+    color: #e0e0e0;
+  }
+  
+  /* Title */
+  .canvas-title {
+    font-size: 28px; /* Larger title */
+    font-weight: 700;
+    color: #7bb5d9; /* Soft bluish color */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Idea Description */
+  .canvas-description {
+    font-size: 20px;
+    color: #b0c4de; /* Lighter bluish-gray */
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+  
+  /* Textarea for details */
+  .canvas-textarea {
+    width: 90%;
+    padding: 15px;
+    border: 2px solid #5a6f7c; /* Bluish border */
+    border-radius: 8px;
+    font-size: 16px;
+    background: #34495e; /* Dark bluish background */
+    color: white;
+    outline: none;
+    resize: vertical; /* Allows resizing vertically */
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .canvas-textarea:focus {
+    border-color: #8fa8ff; /* Light blue focus border */
+  }
+  
+  /* Save Button */
+  .save-button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #3a4d63; /* Bluish background */
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .save-button:hover {
+    background: #4f6272; /* Lighter bluish-gray on hover */
+    transform: scale(1.05); /* Subtle scale effect */
+  }
+  

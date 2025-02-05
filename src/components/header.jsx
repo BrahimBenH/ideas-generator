@@ -1,24 +1,23 @@
 import React from 'react';
-
+import "./header.css"; // Ensure this file is imported
+import "../App.css";
 
 function Header({ input, setInput, handleSubmit }) {
   return (
-    <div>
-      <h2>Brainstorming Chat</h2>
+    <div className="header-container">
+   
+
+      <h2 className="header-title">💡 Brainstorming Chat 💡</h2>
       <input
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
         placeholder="Enter your idea prompt..."
-        style={{ width: "300px", padding: "8px" }}
+        className="header-input"
       />
-      <button 
-        onClick={handleSubmit} 
-        style={{ marginLeft: "10px", padding: "8px" }}
-      >
-        Generate Ideas
+      <button onClick={handleSubmit} className="header-button">
+        Generate Ideas 🚀
       </button>
-      <br /><br />
     </div>
   );
 }

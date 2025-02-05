@@ -1,9 +1,13 @@
 import { useState } from "react";
 import Response from "../components/response";
 import Header from "../components/header";
+import "./chat.css";
+import "../App.css";
+
 
 import { getBrainstormIdea } from "../api"; // Make sure the path is correct
 let savedIdeas = [];
+
 function Chat() {
   const [input, setInput] = useState("");
   const [response, setResponse] = useState("");
@@ -17,6 +21,7 @@ function Chat() {
     try {
       // Remove any unwanted formatting
       const cleanedResponse = idea.replace(/```json|```/g, "").trim();
+      console.log(cleanedResponse);
       const parsedResponse = JSON.parse(cleanedResponse);
   
       if (Array.isArray(parsedResponse)) {
@@ -34,7 +39,7 @@ function Chat() {
 
   const handleItemClick = (index) => {
     savedIdeas.push(response[index]);
-    localStorage.setItem("savedIdeas", JSON.stringify(savedIdeas) )
+    localStorage.setItem("savedIdeas", JSON.stringify(savedIdeas));
 
     setClickedItems(prev => ({
       ...prev,
@@ -42,29 +47,20 @@ function Chat() {
     }));
   };
   
-  if (response!=="" && response!==undefined) {
   return (
-    <div>
-     
+    <div className="chat-container">
       <Header input={input} setInput={setInput} handleSubmit={handleSubmit} />
-      <Response
-        response={response}
-        handleItemClick={handleItemClick}
-        clickedItems={clickedItems}
-
+      {response && response.length > 0 ? (
+        <Response
+          response={response}
+          handleItemClick={handleItemClick}
+          clickedItems={clickedItems}
         />
+      ) : (
+        <p className="no-response-text">No responses yet 🍃</p>
+      )}
     </div>
-  );}
-  else {
-    return (
-      <div>
-       
-        <Header  input={input} setInput={setInput} handleSubmit={handleSubmit} />
-        <p>No responses yet</p>
-       
-      </div>
-    );
-  }
+  );
 }
 
 export default Chat;

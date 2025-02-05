@@ -1,0 +1,42 @@
+/* No container, just the list of ideas */
+.saved-ideas-container {
+    text-align: center;
+    padding: 20px;
+    color: #e0e0e0; /* Light text color */
+  }
+  
+  /* Title */
+  .saved-ideas-title {
+    font-size: 26px; /* Slightly smaller */
+    font-weight: 600;
+    color: #3c4e64; /* Lighter blue */
+    margin-bottom: 20px;
+  }
+  
+  /* Message for no saved ideas */
+  .saved-ideas-message {
+    font-size: 18px;
+    color: #b0b0b0; /* Lighter gray */
+    margin-bottom: 20px;
+  }
+  
+  /* Each idea styled as a clickable list item */
+  .saved-idea-item {
+    background: #e2e7ec; /* Light, soft grayish blue background */
+    padding: 12px;
+    text-decoration: none; /* Remove underline */
+    border-radius: 8px;
+    margin: 8px 0; /* Stack items with space between */
+    font-size: 16px;
+    color: #333; /* Dark text */
+    cursor: pointer; /* Indicates it's clickable */
+    transition: background 0.3s ease, transform 0.2s ease-in-out;
+    display: block; /* Ensures it stacks vertically */
+  }
+  
+  /* Hover effect on each item */
+  .saved-idea-item:hover {
+    background: #d1dae4; /* Slightly darker on hover */
+    transform: scale(1.01); /* Slight lift effect */
+  }
+  

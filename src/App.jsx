@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Chat from "./pages/chat"; // Ensure file names match
-import SavedIdeas from "./pages/SavedIdeas";
+import SavedIdeas from "./pages/savedIdeas";
 import Canvas from "./pages/canvas";
 import "./App.css";
 

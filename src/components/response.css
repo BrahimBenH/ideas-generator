@@ -1,0 +1,59 @@
+/* Response Container */
+.response-container {
+  padding: 20px;
+  background: #2a2a2a; /* Dark background similar to header */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 20px auto;
+  color: white;  /* Text color matching header */
+}
+
+/* Response Title */
+.response-title {
+  font-size: 30px;
+  color: #26304d; /* Deep, elegant green */
+  font-family: 'Inter', sans-serif;
+  padding: 10px;}
+
+
+/* Response List */
+.response-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Response Item */
+.response-item {
+  background: #e2e7ec; /* Light, soft grayish blue background */
+  padding: 12px;
+  text-decoration: none; /* Remove underline */
+  border-radius: 8px;
+  margin: 8px 0; /* Stack items with space between */
+  font-size: 16px;
+  color: #333; /* Dark text */
+  cursor: pointer; /* Indicates it's clickable */
+  transition: background 0.3s ease, transform 0.2s ease-in-out;
+  display: block; /* Ensures it stacks vertically */
+}
+
+/* Hover effect on each item */
+.response-item:hover {
+  background: #d1dae4; /* Slightly darker on hover */
+  transform: scale(1.01); /* Slight lift effect */
+}
+
+
+/* Active (clicked) Response Item */
+.response-item.clicked {
+  background: #8eaac6;  /* Highlighted item color */
+  border-color: #8fa8ff;  /* Matching border color on click */
+}
+
+/* .none class (no background or border) */
+.none {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}

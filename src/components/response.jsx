@@ -1,27 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
+import './response.css'; // Import the CSS file
+import "../App.css";
 
-function Response({ response,  handleItemClick, clickedItems }) {
-
+function Response({ response, handleItemClick, clickedItems }) {
   return (
-    <div >
-   
-      
-      <strong>Response:</strong>
-      <ul>
-        {Array.isArray(response) ? (
+    <div className="none">
+      <strong className="response-title">Response:</strong>
+      <ul className="response-list">
+        {Array.isArray(response) &&
           response.map((idea, index) => (
-            <li 
+            <li
               key={index}
               onClick={() => handleItemClick(index)}
-              style={{
-                cursor: 'pointer',
-                backgroundColor: clickedItems[index] ? '#e0e0e0' : 'transparent'
-              }}
+              className={`response-item ${clickedItems[index] ? 'clicked' : ''}`}
             >
-              {idea} 
+              {idea}
             </li>
-          ))
-        ) : null}
+          ))}
       </ul>
     </div>
   );

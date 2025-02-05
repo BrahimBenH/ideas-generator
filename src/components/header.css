@@ -1,0 +1,66 @@
+/* Header Container */
+.header-container {
+  text-align: center;
+  background: #2c3e50;  /* Dark bluish-gray background for consistency */
+  padding: 20px;  /* Adjusted padding for better spacing */
+  border-radius: 12px;  /* Slightly rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  /* Softer shadow for a lighter feel */
+  max-width: 450px;
+  margin: 20px auto;  /* Centered with margin */
+  color: #e0e0e0;  /* Light text color */
+}
+
+/* Bot Image - Consistent Size & Centered */
+.bot-image {
+  width: 80px;  /* Reduced size for balance */
+  height: 80px;
+  border-radius: 50%;
+  opacity: 0.85;  /* Slightly more transparency for a softer look */
+  margin: 0 auto;  /* Center image */
+  padding: 0;  /* Removed unnecessary padding */
+}
+
+/* Title */
+.header-title {
+  font-size: 28px;  /* Larger, more prominent title */
+  font-weight: 700;  /* Bold text */
+  color: #7bb5d9;  /* Lighter bluish color for a fresh look */
+  margin-bottom: 20px;  /* Space below title */
+  text-align: center;  /* Ensured text is centered */
+}
+
+/* Input */
+.header-input {
+  width: 90%;
+  padding: 12px;  /* Slightly more padding for better feel */
+  border: 2px solid #5a6f7c;  /* Bluish-gray border for contrast */
+  border-radius: 6px;
+  font-size: 16px;  /* Adjusted font size for readability */
+  outline: none;
+  background: #34495e;  /* Dark bluish background for contrast */
+  color: white;
+  transition: border 0.3s ease-in-out;
+}
+
+.header-input:focus {
+  border-color: #8fa8ff;  /* Light blue focus color */
+}
+
+/* Button */
+.header-button {
+  margin-top: 15px;  /* More space above button */
+  padding: 12px 20px;  /* Slightly larger padding */
+  background: #3a4d63;  /* Bluish background */
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;  /* Increased font size for readability */
+  font-weight: 600;  /* Bold button text */
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-button:hover {
+  background: #4f6272;  /* Lighter bluish-gray on hover */
+  transform: scale(1.01);  /* Subtle scale effect */
+}
