@@ -21,7 +21,8 @@ function Chat() {
     try {
       // Remove any unwanted formatting
       const cleanedResponse = idea.replace(/```json|```/g, "").trim();
-      console.log(cleanedResponse);
+      
+
       const parsedResponse = JSON.parse(cleanedResponse);
   
       if (Array.isArray(parsedResponse)) {

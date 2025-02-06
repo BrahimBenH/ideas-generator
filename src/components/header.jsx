@@ -4,7 +4,7 @@ import "../App.css";
 
 function Header({ input, setInput, handleSubmit }) {
   return (
-    <div className="header-container">
+    <div className="none">
    
 
       <h2 className="header-title">💡 Brainstorming Chat 💡</h2>
